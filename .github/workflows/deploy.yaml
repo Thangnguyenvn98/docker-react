@@ -18,8 +18,8 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         with:
-          application_name: frontend
-          environment_name: Frontend-env
+          application_name: react
+          environment_name: React-env
           existing_bucket_name: elasticbeanstalk-us-east-1-796973501917
           region: us-east-1
           version_label: ${{ github.sha }}
